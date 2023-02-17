@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio2</title>
+    <div align="center">
+    <p style="color:#FF0080";>
+    <script>
+        var saldoini;
+        saldoini= parseFloat(prompt("Ingrese el capital que obtuvo en el primer mes del año: "));
+        if(isNaN(saldoini)){
+           document.write("Hubo un error, ingrese solamente números");
+        } else{
+            for(let mes =1; mes <= 12; mes++ ){
+            saldoini+=250;
+
+            let interes= 0.0125;
+
+            let resultado = saldoini * interes;
+            saldoini+= resultado
+            }
+
+
+        
+        document.write("Los ingresos hasta el mes de diciembre son " + saldoini.toFixed(2) + " Bs");
+        }    
+
+       
+            
+        
+    </script>
+    </p>
+    </div>
+</head>
+<body>
+    
+</body>
+</html>

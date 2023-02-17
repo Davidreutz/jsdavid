@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio1</title>
+    <div align="center">
+    <p style="color:#FF0080";>
+    <script>
+       
+        let alumnopeso = [];
+
+        let alumno = parseFloat(prompt("Ingrese el numero de estudiantes que va a registrar:"));
+
+        for (let n = 0; n < alumno; n++) {
+
+            let kg = parseFloat(prompt("Ingrese el peso del alumno número " + (n + 1) + " y también ingrese su peso: "));
+            alumnopeso.push(kg);
+        }
+        let  cuarenta= alumnopeso.filter(kg => kg < 40).length;
+
+        let cuaycinco = alumnopeso.filter(kg => kg >= 40 && kg < 50).length;
+
+        let cincuenta = alumnopeso.filter(kg => kg >= 50 && kg < 60).length;
+
+        let sesenta = alumnopeso.filter(kg => kg >= 60).length;
+        '<div align="center">'
+
+        document.write('<br>', "Número de alumnos ");
+
+        document.write('<br>', "numero de alumnos con peso menor a 40 kg: " + cuarenta);
+
+        document.write('<br>', "numero de alumnos con peso entre 40 y 50 kg: " + cuaycinco);
+
+        document.write('<br>', "numero de estudiantes con peso entre 50 y 60 kg: " + cincuenta);
+
+        document.write('<br>', "numero de estudiantes con peso de mas de 60kg: " + sesenta);
+        
+    </script>
+    </p>
+    </div>
+</head>
+<body>
+  
+
+</body>
+</html>
